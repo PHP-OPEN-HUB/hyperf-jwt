@@ -1,7 +1,7 @@
 {
   "name": "nizerin/hyperf-jwt",
   "type": "library",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "keywords": [
     "php",
     "hyperf",
