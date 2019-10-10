@@ -15,7 +15,7 @@
       "role": "Developer"
     }
   ],
-  "description": "A jwt-auth Component build for hyperf",
+  "description": "A jwt-auth component build for Hyperf",
   "autoload": {
     "psr-4": {
       "Hyperf\\JwtAuth\\": "src/"
