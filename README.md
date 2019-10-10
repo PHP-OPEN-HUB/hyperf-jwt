@@ -210,8 +210,8 @@ class IndexController extends Controller
 }
 ```
 ##### 11、获取解析后的token数据
-提供了一个方法getParserData来获取解析后的token数据。
+提供了一个方法`getParserData`来获取解析后的token数据。
 例如：$this->jwt->getParserData()
 
 ##### 12、建议
-目前jwt抛出的异常目前有两种类型Hyperf\JwtAuth\Exception\TokenValidException和Hyperf\JwtAuth\Exception\JWTException,TokenValidException异常为token验证失败的异常，会抛出401,JWTException异常会抛出500，最好你们自己在项目异常重新返回错误信息
+目前 jwt 抛出的异常目前有两种类型`Hyperf\JwtAuth\Exception\TokenValidException`和`Hyperf\JwtAuth\Exception\JWTException`,`TokenValidException`异常为 token 验证失败的异常，会抛出 401, JWTException 异常会抛出 500 ，最好你们自己在项目异常重新返回错误信息。
