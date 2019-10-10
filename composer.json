@@ -1,0 +1,58 @@
+{
+  "name": "nizerin/hyperf-jwt",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "hyperf",
+    "jwt"
+  ],
+  "authors": [
+    {
+      "name": "nizerin",
+      "email": "nizerin98@gmail.com",
+      "homepage": "https://www.iacblog.com/",
+      "role": "Developer"
+    }
+  ],
+  "description": "A jwt-auth Component build for hyperf",
+  "autoload": {
+    "psr-4": {
+      "Hyperf\\JwtAuth\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HyperfTest\\": "tests"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "ext-swoole": ">=4.4",
+    "hyperf/utils": "~1.1.0",
+    "hyperf/framework": "~1.1.0",
+    "hyperf/di": "~1.1.0",
+    "hyperf/cache": "~1.0.0",
+    "lcobucci/jwt": "^3.2",
+    "nesbot/carbon": "^1.0 || ^2.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.14",
+    "hyperf/testing": "~1.1.0",
+    "phpstan/phpstan": "^0.10.5",
+    "nizerin/swoole-ide-helper": "~1.0.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": "co-phpunit -c phpunit.xml --colors=always",
+    "analyze": "phpstan analyse --memory-limit 300M -l 0 ./src",
+    "cs-fix": "php-cs-fixer fix $1"
+  },
+  "extra": {
+    "hyperf": {
+      "config": "Hyperf\\JwtAuth\\ConfigProvider"
+    }
+  }
+}
